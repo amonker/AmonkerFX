@@ -1,0 +1,201 @@
+.root {
+	-fx-background-color: gray ;
+    -fx-font-size: 14px;
+    -fx-border-width: 4;
+    -fx-border-style: solid ;
+    -fx-border-color:  #849cbb;
+}
+
+.title-bar {
+    -fx-background-color: #849cbb;
+}
+
+.title-bar-title-text {
+	-fx-background-color: transparent;
+	-fx-padding: 2 10 2 18;
+	-fx-font-family: "Arial";
+	-fx-font-size: 18px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: transparent ;
+    -fx-border-width:2 ;
+    -fx-border-radius: 50 ;
+    -fx-border-color:white;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-padding: 3 3 3 3;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+    -fx-cursor:hand ;
+}
+
+.button:pressed {
+    -fx-background-color: aqua ;
+    -fx-border-width:2 ;
+    -fx-border-radius: 50 ;
+    -fx-border-color:yellow;
+    -fx-background-radius: 50;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-padding: 3 3 3 3;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor:hand ;
+}
+
+.button {
+	-fx-background-color: transparent ;
+	-fx-border-width:0.0% ;
+    -fx-border-radius: 50.0% ;
+    -fx-border-color:transparent;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 50.0%;
+    -fx-padding: 3 3 3 3;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+    -fx-cursor:default ;
+}
+
+.table-view {
+  -fx-base: #1d1d1d;
+  -fx-control-inner-background: #1d1d1d;
+  -fx-background-color: #1d1d1d;
+  -fx-table-cell-border-color: transparent;
+  -fx-table-header-border-color: transparent;
+  -fx-padding: 5;
+  -fx-text-fill: yellow;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: yellow;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: blue;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: transparent;
+    -fx-border-width: 1.5px;
+    -fx-border-color: derive(-fx-base, 80%);
+}
+
+.scroll-pane {
+	-fx-background-color: gray ;
+}
+
+.titled-pane {
+    -fx-background-color: gray
+}
+ 
+.titled-pane > .title  {
+    -fx-background-radius: 0, 0, 0;
+    -fx-font: bold 14px System;
+    
+    /* stop the background from being blue on focus */
+    -fx-background-color: peru ;
+}
+ 
+.titled-pane:focused > .title > .arrow-button .arrow {
+    /* do not highlight the title pane arrow on focus */
+    -fx-background-color: #606060;
+}
+
+.combo-box-base  {
+    /* the left side of the combo box is not rounded */
+    -fx-background-color: #b7e8bd ;
+    -fx-background-radius:0;
+    -fx-border-width: 2px;	
+    -fx-text-fill: gray;
+}
+
+.combo-box-base:hover  {
+    /* the left side of the combo box is not rounded */
+    -fx-background-color: #add8e6 ;
+    -fx-background-radius:0;
+    -fx-border-width: 2px;	
+}
+
+.combo-box-base > .arrow-button {
+	-fx-background-color: bisque  ;
+    -fx-background-radius:0;
+    -fx-border-width: 2px;	
+}
+
+.combo-box-base > .arrow-button:hover {
+	-fx-background-color: bisque ;
+    -fx-background-radius:0;
+    -fx-border-color: derive(-fx-base, 80%);
+    -fx-border-width: 2px;	
+}
+
+.combo-box-base > .arrow-button:pressed {
+	-fx-background-color: derive(-fx-base, 80%) ;
+    -fx-background-radius:0;
+    -fx-border-color: bisque;
+    -fx-border-width: 2px;	
+}
+
+.scroll-bar > .thumb {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.scroll-bar > .track {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:derive(-fx-base, 40%) ;
+}
+
+.scroll-bar > .decrement-button {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.scroll-bar > .increment-button {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.list-view {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.progress-bar {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.progress-bar > .track {
+	-fx-background-color: #1d1d1d;
+	-fx-border-color:white ;
+}
+
+.progress-bar .bar {
+    -fx-background-color:
+        -fx-box-border,
+        linear-gradient(to bottom, derive(-fx-accent,95%), derive(-fx-accent,10%)),
+        blue; /* this line is the background color of the bar */
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em; /* 5 */
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root type="BorderPane" prefWidth="424.0" xmlns:fx="http://javafx.com/fxml">
+  <bottom>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+        <ToolBar id="" HBox.hgrow="ALWAYS">
+          <items>
+            <Button id="iphone" minWidth="-1.0" mnemonicParsing="false" prefWidth="-1.0" text="" />
+            <Label text="Label" />
+          </items>
+        </ToolBar>
+        <ToolBar id="iphone-toolbar">
+          <items>
+            <Button id="" ellipsisString="" minWidth="42.999900000002526" mnemonicParsing="false" prefWidth="53.0" text="&gt;" textAlignment="CENTER" textOverrun="CLIP" />
+          </items>
+        </ToolBar>
+      </children>
+    </HBox>
+  </bottom>
+  <center>
+    <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="200.0" vbarPolicy="AS_NEEDED">
+      <content>
+        <VBox prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <TitledPane animated="false" content="$null" text="无标题" VBox.vgrow="ALWAYS">
+              <VBox.margin>
+                <Insets />
+              </VBox.margin>
+            </TitledPane>
+            <TitledPane animated="false" text="无标题">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+          </children>
+        </VBox>
+      </content>
+    </ScrollPane>
+  </center>
+  <stylesheets>
+    <URL value="@AmonkerUI.css" />
+  </stylesheets>
+  <top>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+        <HBox prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+          <children>
+            <Button mnemonicParsing="false" text="Button" />
+          </children>
+        </HBox>
+        <HBox alignment="TOP_RIGHT" prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="73.0" prefWidth="133.0" text="Button" />
+          </children>
+        </HBox>
+      </children>
+    </HBox>
+  </top>
+</fx:root>
